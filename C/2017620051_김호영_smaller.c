@@ -1,7 +1,7 @@
 /*
-    ìž‘ì„±ì¼ : 2021 - 03 - 11
-    ìž‘ì •ìž : ê¹€ í˜¸ì˜
-    ì†ŒìŠ¤íŒŒì¼ ë‚´ìš© : ì„¸ ì •ìˆ˜ë¥¼ ìž…ë ¥ ë°›ê³  ìž…ë ¥ ë°›ì€ ê°’ì˜ ìµœì†Œê°’ì„ êµ¬í•˜ê¸°.
+    ÀÛ¼ºÀÏ : 2021 - 04 - 23
+    ÀÛ¼ºÀÚ : ±èÈ£¿µ
+    ¼Ò½ºÆÄÀÏ ³»¿ë : 3°³ÀÇ Á¤¼ö¸¦ ÀÔ·Â¹Þ¾Æ °¡Àå ÀÛÀº ¼ö¸¦ Ãâ·ÂÇÕ´Ï´Ù.
  */
 
 #include <stdio.h>
@@ -10,13 +10,13 @@ int main()
 {
     int x, y, z, min;
 
-    printf("ì²«ë²ˆì§¸ ì •ìˆ˜ : ");
+    printf("Ã¹¹øÂ° Á¤¼ö : ");
     scanf("%d", &x);
 
-    printf("ë‘ë²ˆì§¸ ì •ìˆ˜ : ");
+    printf("µÎ¹øÂ° Á¤¼ö : ");
     scanf("%d", &y);
 
-    printf("ì„¸ë²ˆì§¸ ì •ìˆ˜ : ");
+    printf("¼¼¹øÂ° Á¤¼ö : ");
     scanf("%d", &z);
 
     if (x < y && x < z)
@@ -32,7 +32,7 @@ int main()
         min = z;
     }
 
-    printf("ìž…ë ¥í•œ %d, %d, %d ì¤‘ ê°€ìž¥ ìž‘ì€ ìˆ˜ëŠ” %d ìž…ë‹ˆë‹¤.", x, y, z, min);
+    printf("ÀÔ·ÂÇÑ %d, %d, %dÁß °¡Àå ÀÛÀº ¼ö´Â %d ÀÔ´Ï´Ù. \n", x, y, z, min);
 
     return 0;
 }

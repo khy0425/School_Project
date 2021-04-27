@@ -33,14 +33,11 @@ public class PhoneManager {
     }
 
     public void searchItem() {
-        Member phoneItem = new Member();
-
         @SuppressWarnings("resource")
         Scanner scn = new Scanner(System.in);
         System.out.print("검색할 이름(종료 : exit)>>");
         String searchName = scn.nextLine();
 
-        // ArrayList<Member> checkname = new ArrayList<Member>();
         switch (searchName) {
         case "exit":
             for (int i = 0; i < phoneItemList.size(); i++) {
@@ -50,7 +47,7 @@ public class PhoneManager {
             break;
 
         default:
-            for (int i = 0; i < phoneItemList.get(i).getName().length(); i++) {
+            for (int i = 0; i < phoneItemList.get(i).getName().length();) {// i++ 왜 없애야되지??
                 if (searchName.equals(phoneItemList.get(i).getName())) {
                     System.out.println(searchName + "의 번호는 " + phoneItemList.get(i).getPhoneNum() + "입니다.");
                     break;

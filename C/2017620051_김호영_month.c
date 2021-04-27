@@ -1,8 +1,8 @@
 /*
-    ìž‘ì„±ì¼ : 2021 - 03 - 11
-    ìž‘ì •ìž : ê¹€ í˜¸ì˜
-    ì†ŒìŠ¤íŒŒì¼ ë‚´ìš© : swithch ~ case ë¬¸ì„ í™œìš©í•˜ì—¬, ì›”ì„ ìž…ë ¥ë°›ìœ¼ë©´ í•´ë‹¹ ë‹¬ì˜ ë‚ ì§œ ìˆ˜ë¥¼ ì¶œë ¥. 
-    ë‹¨, ìž…ë ¥ ë°›ì€ ë‹¬ì´ 1 ~ 12 ê°€ ì•„ë‹ˆë¼ë©´ 'ì—†ëŠ” ë‹¬' ì´ë¼ê³  ì¶œë ¥ë˜ë„ë¡.
+    ÀÛ¼ºÀÏ : 2021 - 04 - 23
+    ÀÛÁ¤ÀÚ : ±è È£¿µ
+    ¼Ò½ºÆÄÀÏ ³»¿ë : swithch ~ case ¹®À» È°¿ëÇÏ¿©, ¿ùÀ» ÀÔ·Â¹ÞÀ¸¸é ÇØ´ç ´ÞÀÇ ³¯Â¥ ¼ö¸¦ Ãâ·Â. 
+    ´Ü, ÀÔ·Â ¹ÞÀº ´ÞÀÌ 1 ~ 12 °¡ ¾Æ´Ï¶ó¸é '¾ø´Â ´Þ' ÀÌ¶ó°í Ãâ·ÂµÇµµ·ÏÇÕ´Ï´Ù.
  */
 
 #include <stdio.h>
@@ -11,7 +11,7 @@ int main()
 {
     int month, days;
 
-    printf("ë‹¬ì„ ìž…ë ¥í•˜ì‹œì˜¤: ");
+    printf("´ÞÀ» ÀÔ·ÂÇÏ½Ã¿À: ");
     scanf("%d", &month);
     switch (month)
     {
@@ -54,10 +54,10 @@ int main()
 
     default:
         days = 0;
-        printf("%d ëŠ” ì—†ëŠ” ë‹¬ ìž…ë‹ˆë‹¤. \n", month);
+        printf("%d ´Â ¾ø´Â ´Þ ÀÔ´Ï´Ù. \n", month);
         break;
     }
-    printf("%dì›”ì˜ ì¼ìˆ˜ëŠ” %dì¼ ìž…ë‹ˆë‹¤. \n", month, days);
+    printf("%d¿ùÀÇ ÀÏ¼ö´Â %dÀÏ ÀÔ´Ï´Ù. \n", month, days);
 
     return 0;
 }
